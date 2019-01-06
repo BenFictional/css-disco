@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <!-- The page title -->
+        <title>Disco</title>
+
+        <!-- BEGIN CSS -->
+        <style>
+
+          /* Centers all content, you can ignore this stuff */
+          html, body {
+            height: 100%;
+            margin: 0;
+          }
+          body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
+          /***********************************
+          ADD YOU CUSTOM PROPERTIES BELOW HERE
+          ***********************************/
+
+          /*  When <body> has "active" class. */
+          body.active { background: black; }
+
+          /* Properties for all <h1> elements */
+          h1 {
+            font-size: 60px;
+          }
+
+          /* When <body> has active class: target all <h1> elements*/
+          body.active h1 {
+            color: white;
+          }
+
+        </style> <!-- End CSS -->
+    </head>
+
+
+    <!-- BEGIN CONTENT -->
+    <body>
+
+        <!-- ADD YOUR CUSTOM CONTENT BELOW HERE -->
+
+        <h1>Change this text</h1>
+
+        <button onclick="toggleClass()">Click me</button>
+
+
+
+
+
+      <!--
+      Don't edit anything below here.
+      Javascript adds "active" class to <body> when the button is clicked
+      -->
+      <script>
+      function toggleClass() {
+      var element = document.body; // Get the body element
+      element.classList.toggle("active"); // Add or remove class "active"
+      }
+      </script>
+
+
+    </body>
+</html>
